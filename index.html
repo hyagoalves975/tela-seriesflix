@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'> <!--permite caracteres acentuados-->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SeriesFlix</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='style/main.css'>
+    
+    <script src='js/main.js'></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h2 class="logo">SERIESFLIX</h2>
+
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Destaques</a>
+                <a href="#">Lançamentos</a>
+                <a href="#">Antigas</a>
+            </nav>  
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="serie-principal">
+            <div class="container">
+                <h3 class="titulo">ROUND 6</h3>
+                <p class="descricao">Um grupo de pessoas passando por dificuldades financeiras aceita um estranho convite para um jogo de sobrevivência. Um prêmio bilionário os aguarda, mas as apostas são altas e mortais.</p>
+
+                <div class="botoes"> <!--toda nova div adota o display block por padrão independente da div pai-->
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    
+                    <button role ="button" class="botao" onmouseover="abrirDet();" onmouseout="fecharDet();">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+
+            <div class="container">
+                <div id="popup" class="popup">
+                    <h3>Round 6 (2021)</h3>
+                    <p>18 Action & Adventure, Mistério, Drama 54m</p>
+                    <h4>Sinopse</h4>
+                    <p>Centenas de jogadores falidos aceitam um estranho convite para um jogo de sobrevivência. Um prêmio milionário aguarda, mas as apostas são altas e mortais.</p>
+                    <h4>Criação</h4>
+                    <p>Hwang Dong-hyuk</p>
+               </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+                <div class="item" onmouseover="exibirInfo(info);" onmouseout="ocultaInfo(info);">
+                    <img class="box-filme" src="img/mini1.jpg">
+                        <div id="info" class="info">
+                            <h4><strong>Criador: </strong> Álex Pina</h4>
+                            <p>Crime, Drama</p>
+                        </div>
+                </div>
+
+                <div class="item" onmouseover="exibirInfo(info2);" onmouseout="ocultaInfo(info2);">
+                    <img class="box-filme" src="img/mini2.jpg">
+                        <div id="info2" class="info">
+                            <h4><strong>Criador: </strong> Roberto Aguirre-Sacasa</h4>
+                            <p>Mistério, Crime, Drama</p>
+                        </div>
+                </div>
+
+                <div class="item" onmouseover="exibirInfo(info3);" onmouseout="ocultaInfo(info3);">
+                    <img class="box-filme" src="img/mini3.jpg">
+                        <div id="info3" class="info">
+                            <h4><strong>Criador: </strong> Greg Berlanti</h4>
+                            <p>Ficção, Drama</p>
+                        </div>
+                </div>
+
+                <div class="item" onmouseover="exibirInfo(info4);" onmouseout="ocultaInfo(info4);">
+                    <img class="box-filme" src="img/mini4.jpg">
+                        <div id="info4" class="info">
+                            <h4><strong>Criador: </strong> Michael Hirst</h4>
+                            <p>Ficção, Drama</p>
+                        </div>
+                </div>
+
+                <div class="item" onmouseover="exibirInfo(info5);" onmouseout="ocultaInfo(info5);">
+                    <img class="box-filme" src="img/mini5.jpg">
+                        <div id="info5" class="info">
+                            <h4><strong>Criador: </strong> Jeff Davis</h4>
+                            <p>Sobrenatural, Ficção, Drama</p>
+                        </div>
+                </div>
+
+                <div class="item" onmouseover="exibirInfo(info6);" onmouseout="ocultaInfo(info6);">
+                    <img class="box-filme" src="img/mini6.jpg">
+                        <div id="info6" class="info">
+                            <h4><strong>Criador: </strong> Vince Gilligan</h4>
+                            <p>Drama</p>
+                        </div>
+                </div>
+
+                <div class="item" onmouseover="exibirInfo(info7);" onmouseout="ocultaInfo(info7);">
+                    <img class="box-filme" src="img/mini7.jpg">
+                        <div id="info7" class="info">
+                            <h4><strong>Criador: </strong> David Shore</h4>
+                            <p>Drama</p>
+                        </div>
+                </div>
+
+                <div class="item" onmouseover="exibirInfo(info8);" onmouseout="ocultaInfo(info8);">
+                    <img class="box-filme" src="img/mini8.jpg">
+                        <div id="info8" class="info">
+                            <h4><strong>Criador: </strong> Eric Kripke</h4>
+                            <p>Mistério, Drama</p>
+                        </div>
+                </div>
+
+                <div class="item" onmouseover="exibirInfo(info9);" onmouseout="ocultaInfo(info9);">
+                    <img class="box-filme" src="img/mini9.jpg">
+                        <div id="info9" class="info">
+                            <h4><strong>Criador: </strong> Miles Millar</h4>
+                            <p>Ficção, Drama</p>
+                        </div>
+                </div>
+
+                <div class="item" onmouseover="exibirInfo(info10);" onmouseout="ocultaInfo(info10);">
+                    <img class="box-filme" src="img/mini10.jpg">
+                        <div id="info10" class="info">
+                            <h4><strong>Criador: </strong> David Shore</h4>
+                            <p>Drama</p>
+                        </div>
+                </div>
+        </div>
+         
+    </div>
+
+    <script src="https://kit.fontawesome.com/2e68519899.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+</body>
+</html>

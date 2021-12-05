@@ -1,0 +1,131 @@
+:root{ /*arquivo raiz p/ declarar variável no css*/
+    --vermelho:#e50914;
+    --preta:#141414;  
+    --verde:green;
+}
+
+*{ /*identifica todos os elementos*/
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box; /*delimita todos os elementos a borda da caixa, não passam*/
+}
+
+/*elementos base*/
+
+body{
+    background-color: var(--preta);/*modo para usar a variável declarada la em cima*/
+    font-family: 'Arial', Times, serif;
+    color: white;;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+header .logo{
+    color: var(--verde);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--verde);
+}
+
+/*filmes principal*/
+
+.serie-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/capa-round.webp'); /*liner-gradient é uma forma de criar uma sobreposição de tela*/
+    height: 600px;
+    background-size: cover; /* especifica o tamanho da imagem de fundo da div, o resultado cover significa cobrir*/
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    /*align-items: flex-start; elemento iniciar da esquerda*/
+    align-items: center;
+}
+
+.serie-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+.serie-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer; /*mudar cursor*/
+    transition: .3s ease all; /*cuida da transação dos efeitos*/
+}
+
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+
+.botao i{
+    margin: 8px;
+}
+
+.serie-principal .popup{
+    background-color: rgba(0,0,0,.40);
+    display: flex;
+    text-align: justify;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    display:none;
+}
+
+.container{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.serie-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+.item:hover{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info{
+    display: none;
+}
